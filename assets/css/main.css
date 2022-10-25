@@ -164,7 +164,7 @@
 	border-bottom: none;
 }
 
-.content>a *, .major>h3>a:hover{
+.content>a *:hover, .major>h3>a:hover{
 	color: #30D5C8;
 }
 
