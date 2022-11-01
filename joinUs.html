@@ -81,7 +81,7 @@
 		<!-- Banner -->
 		<section id="main">
 			<header>
-                <h2>Contact Us</h2>
+                <h2>PLEASE FILL OUT OUR VOLUNTEER SIGN UP FORM</h2>
                 <!-- <p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p> -->
             </header>
 		</section>
@@ -91,23 +91,52 @@
             <form method="post" action="#">
                 <div class="row gtr-uniform subscribeBox">
                     <div class="col-6 col-12-xsmall">
-                        <input type="text" name="name" id="firstName" class="white" value="" placeholder="First Name" />
+                        <input type="text" name="name" id="firstName" class="white" autocomplete="name" placeholder="First Name" />
                     </div>
                     <div class="col-6 col-12-xsmall">
-                        <input type="text" name="name" id="lastName" class="white" value="" placeholder="Last Name" />
+                        <input type="text" name="name" id="lastName" class="white" placeholder="Last Name" />
                     </div>
+                    <div class="col-6 col-12-xsmall">
+                        <input type="text" name="phone" id="phone" class="white" placeholder="Phone Number" />
+                    </div>
+                    <div class="form-group ">
+                        <input type="street" 
+                               class="form-control" 
+                               id="inputStreet" 
+                               placeholder="Street">
+                        
+                        <input type="city" 
+                               class="form-control" 
+                               id="inputCity" 
+                               placeholder="City">
+                        
+                        <input type="state" 
+                               class="form-control" 
+                               id="inputState" 
+                               placeholder="State">
+                        
+                        <input type="zip" 
+                               class="form-control" 
+                               id="inputZip" 
+                               placeholder="Zip">
+                        
+                        <input type="country" 
+                               class="form-control" 
+                               id="inputCountry" 
+                               placeholder="Country">
+                      </div>
                     <div class="col-6 col-12-xsmall">
                         <input type="email" name="email" id="email" class="white" value="" placeholder="Email" />
                     </div>
-                    <div class="col-6 col-12-xsmall">
-                        <input type="text" name="phone" id="phone" class="white" value="" placeholder="Phone Number" />
+                    <div class="col-12">
+                        <textarea name="message" id="message" class="white" placeholder="Describe Yourself" rows="6"></textarea>
                     </div>
                     <div class="col-12">
-                        <textarea name="message" id="message" class="white" placeholder="Enter your message" rows="6"></textarea>
+                        <textarea name="message" id="message" class="white" placeholder="Skills You Can Contribute" rows="6"></textarea>
                     </div>
                     <div class="col-12">
                         <ul class="actions">
-                            <li><input type="submit" value="Send Message" class="primary" /></li>
+                            <li><input type="submit" value="Submit" class="primary" /></li>
                             <li><input type="reset" value="Reset" /></li>
                         </ul>
                     </div>
@@ -134,6 +163,7 @@
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/address.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
