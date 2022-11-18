@@ -282,6 +282,9 @@ DONATE BUTTON ZOOM EFFECT
 	.volTitle {
 		font-size: 1.2em;
 	}
+	.scroll {
+		height: 40% !important;
+	}
 }
 
 
