@@ -4,6 +4,7 @@
 .scroll{
     overflow:scroll;
     overflow-x:hidden;
+	scroll-behavior: smooth;
 }
 
 .articles {
