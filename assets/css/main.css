@@ -1,9 +1,15 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
 
-.scroll{
-    overflow:scroll;
-    overflow-x:hidden;
+.donorBox {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+.scroll {
+	overflow: scroll;
+	overflow-x: hidden;
 	scroll-behavior: smooth;
 }
 
@@ -153,7 +159,7 @@
 	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.35);
 }
 
-.articlesHeader{
+.articlesHeader {
 	/* background-image: url('../../images/MSCBanner.JPG') !important; */
 	background-position: center;
 	background-repeat: no-repeat;
@@ -169,7 +175,7 @@
 	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.35);
 }
 
-.MSCBanner{
+.MSCBanner {
 	width: 100% !important;
 
 }
@@ -226,20 +232,20 @@
 DONATE BUTTON ZOOM EFFECT 
 ========================*/
 
-.navDonate{
+.navDonate {
 	width: 50%;
 }
 
-.donate{
+.donate {
 	display: none;
 	padding-left: 6%;
 }
 
-.zoom:hover .donate{
+.zoom:hover .donate {
 	display: block;
 }
 
-.zoom{
+.zoom {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -253,38 +259,55 @@ DONATE BUTTON ZOOM EFFECT
 	transform: scale(1.3);
 }
 
+@media screen and (max-width: 1100px) {
+	.articles{
+		flex-direction: column;
+	}
+	.donorBox {
+		min-width: 100% !important;
+	}
+}
+
 @media screen and (max-width: 660px) {
-	.headDonate{
+	.headDonate {
 		width: 50%;
 		margin-left: 25%;
 	}
-	.transBlack1{
+
+	.transBlack1 {
 		width: 100% !important;
 	}
+
 	.conservationHeader {
 		padding: 8em 0 !important;
 	}
-	.resize{
+
+	.resize {
 		float: none !important;
 		max-width: 100% !important;
 		width: 100% !important;
 		margin-left: 0 !important;
 	}
+
 	.fixMediaImages img {
 		width: 100%;
 	}
-	iframe{
+
+	iframe {
 		width: 100% !important;
 	}
+
 	.bodTitle {
 		margin-top: 5%;
 		font-size: 1.5em;
 	}
+
 	.volTitle {
 		font-size: 1.2em;
 	}
-	.scroll {
-		height: 40% !important;
+
+	.gardensImg {
+		width: 100%;
 	}
 }
 
@@ -333,14 +356,14 @@ DROP DOWN MENU
 
 .dropdown-content {
 	display: none;
-	position:fixed;
+	position: fixed;
 	background-color: #34A56F;
 	width: 250px;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
 }
-	
-	/*  */
+
+/*  */
 
 .dropdown-content a {
 	float: none;
@@ -439,8 +462,12 @@ ul.pagination li:last-child {
 	.articles {
 		flex-direction: column;
 	}
+
 	.wrapper {
 		padding: 3em 0 !important;
+	}
+	.scroll {
+		position: relative;
 	}
 }
 
@@ -448,54 +475,56 @@ ul.pagination li:last-child {
 ADDRESS FORM 
 ===============*/
 
-input, label {
+input,
+label {
 	margin: 5px 5px;
-  }
-  
-  .form-group {
-	width: 100%
-  }
+}
 
-  .form-group input {
+.form-group {
+	width: 100%
+}
+
+.form-group input {
 	height: 2.75em;
 	border: none;
 	margin: 1em 0;
 	outline: 0;
 	color: #232323;
 	border-radius: 3px;
-  }
-  
-  .form-control {
-	float: left;
-  }
-  
-  #inputStreet {
-	width: 100%;
-  }
-  
-  #inputCity {
-	width: 50%;
-  }
-  
-  #inputState {
-	width: 15%;
-  }
-  
-  #inputZip {
-	width: 28%;
-  }
-  
-  #inputCounty {
-	width: 45%;
-  }
-  
-  #inputCountry {
-	width: 50%;
-  }
+}
 
-  #inputState, #inputZip {
+.form-control {
+	float: left;
+}
+
+#inputStreet {
+	width: 100%;
+}
+
+#inputCity {
+	width: 50%;
+}
+
+#inputState {
+	width: 15%;
+}
+
+#inputZip {
+	width: 28%;
+}
+
+#inputCounty {
+	width: 45%;
+}
+
+#inputCountry {
+	width: 50%;
+}
+
+#inputState,
+#inputZip {
 	margin-left: 1.5em;
-  }
+}
 
 
 
@@ -4633,9 +4662,9 @@ body.landing #footer {
 	background-color: rgba(29, 36, 42, 0.9);
 }
 
-body.is-mobile.landing #page-wrapper {
+/* body.is-mobile.landing #page-wrapper {
 	background: none;
-}
+} */
 
 body.is-mobile.landing #banner,
 body.is-mobile.landing .wrapper.style4 {
