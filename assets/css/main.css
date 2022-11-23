@@ -175,6 +175,14 @@
 	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.35);
 }
 
+.fundraiserHeader{
+	background-image: url('../../images/Roberta.jpg') !important;
+	background-position: bottom !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.35);
+}
+
 .MSCBanner {
 	width: 100% !important;
 
@@ -308,6 +316,10 @@ DONATE BUTTON ZOOM EFFECT
 
 	.gardensImg {
 		width: 100%;
+	}
+	.bod {
+		width: 100%;
+		margin: 0;
 	}
 }
 
